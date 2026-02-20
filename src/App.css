@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-header {
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.user-section p {
+  color: #666;
+  font-size: 1em;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.login-btn,
+.logout-btn {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.login-btn:hover,
+.logout-btn:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.app-content {
+  background: white;
+  border-radius: 0 0 20px 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.add-btn {
+  padding: 14px 28px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.add-btn:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.add-btn:active {
+  transform: translateY(0);
+}
+
+.tasks-container {
+  margin-top: 25px;
+}
+
+.tasks-list {
+  list-style: none;
+}
+
+.task-item {
+  background: #f8f9fa;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.task-item:hover {
+  background: #f0f1ff;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.task-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.task-text {
+  flex: 1;
+  color: #333;
+  font-size: 1.05em;
+  word-break: break-word;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.edit-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(76, 175, 80, 0.3);
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
+}
+
+.edit-form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.edit-input {
+  padding: 12px 14px;
+  border: 2px solid #667eea;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+.edit-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.save-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background: #999;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #888;
+  transform: translateY(-2px);
+}
+
+.no-tasks {
+  text-align: center;
+  color: #999;
+  font-size: 1.1em;
+  padding: 30px 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.login-prompt {
+  background: white;
+  border-radius: 20px;
+  padding: 60px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.login-prompt p {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+}
