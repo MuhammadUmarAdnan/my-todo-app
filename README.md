@@ -1,3 +1,6 @@
+Note
+The primary purpose of the project was to learn basics of firebase.
+
 TeamBoard: Collaborative Task Management System
 TeamBoard is a real-time, multi-user task management application designed for team collaboration. Built with React and Firebase, it allows users to create shared boards, manage members, and coordinate tasks with role-specific permissions.
 
@@ -48,6 +51,3 @@ Firestore: Real-time NoSQL Database
 Authentication: OAuth (Google)
 
 Hosting: Firebase Hosting
-
-Note
-The primary purpose of the project was to learn basics of firebase.
