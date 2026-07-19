@@ -48,3 +48,6 @@ Firestore: Real-time NoSQL Database
 Authentication: OAuth (Google)
 
 Hosting: Firebase Hosting
+
+Note
+The primary purpose of the project was to learn basics of firebase.
