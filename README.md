@@ -1,5 +1,5 @@
-Note
-The primary purpose of the project was to learn basics of firebase.
+##Note
+A basic lab exercise created to explore firebase database and authentication basics. the app code was generated using ai tools to serve as a fast sandbox for testing how cloud backend services integrate with a simple frontend.
 
 TeamBoard: Collaborative Task Management System
 TeamBoard is a real-time, multi-user task management application designed for team collaboration. Built with React and Firebase, it allows users to create shared boards, manage members, and coordinate tasks with role-specific permissions.
